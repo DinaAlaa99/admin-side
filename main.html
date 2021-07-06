@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>map test</title>
+    <link rel="stylesheet" href="./style/mystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div id="box">
+        <script src="./main.js"> </script>
+        <span id="button" onclick="openform()">AddStation</span>
+        <form action="" name="form" id="form">
+            <p>Staion Name in Arabic<input name="stationNameA" id= "stationNameA" type="text" placeholder="اسم المحطة" value="" required /></p> 
+            <p>Station Name in English<input id="stationNameE" type="text" placeholder="Station Name" value="" required /></p>
+            
+            <label for="stations">Choose a Path:</label>
+            <select name="stations" id="stations">
+                <option value="El Geish Road">El Geish Road</option>
+                <option value="Tram">Tram</option>
+                <option value="Abu Qir Road">Abu Qir Road</option>
+            </select>
+            
+            <p>Latitude<input id="Latitude" type="number" value="" readonly /></p>
+            <p>Longitude<input id="Longitude" type="number" value="" readonly /></p>
+       
+            
+             <p>Starting from Sporting Station...</p>
+
+            <label for="stations">Choose Previous Station:</label>
+            <select name="previous station" id="select" >   
+            </select></p>
+
+            <label for="stations">Choose Next Station:</label>
+            <select name="next station" id="select">
+            </select></p>
+
+            <p><input type="submit" value="submit" onclick="getdata()" /></p>
+
+
+        </form>
+      
+    </div>
+
+
+
+    <!-- this div will hold your map -->
+    <div id="map" class="mymap"></div>
+
+    <!-- this div will hold your store info -->
+    <div id="info_div" class="mymap"></div>
+
+    <script src="./main.js"> </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnNvDFPC-zgjggGXYNoQR3yyZ-92UZ4LM&callback=initMap" async defer></script>
+</body>
+
+</html>
