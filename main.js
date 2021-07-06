@@ -45,9 +45,10 @@
 function getdata() {
     const stationNameinArabic = document.getElementById("stationNameA").value
     const stationNameinEnglish = document.getElementById("stationNameE").value
-    console.log("hi")
+   
 
     console.log(stationNameinArabic)
+    console.log(stationNameinEnglish)
    }
 
 
